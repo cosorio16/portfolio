@@ -1,11 +1,27 @@
 * {
   margin: 0;
   padding: 0;
+  min-width: 0;
+}
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
 }
 
 p,
@@ -15,6 +31,10 @@ li,
 a {
   color: #ffffff;
   font-family: "Fira Sans", sans-serif;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 button {
@@ -226,29 +246,32 @@ main {
   min-width: 200px;
   gap: 20px;
   justify-content: space-around;
+  padding-left: 5px;
 }
 
 .project_buttons button {
-  width: 100px;
-  padding: 5px;
-  background: none;
+  width: 120px;
+  padding: 10px;
+  border: none;
   color: white;
-  border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.397);
   font-weight: 1000;
+  background-color: #016fa3;
+  transition: transform 0.333s ease;
+}
+
+.project_buttons button:hover {
+  transform: scale(1.1);
 }
 
 .image_project {
   width: 50%;
   border-radius: 20px;
-  filter: drop-shadow(30px 10px 4px #016fa3);
-  transition: filter 0.5s ease;
   object-fit: cover;
 }
 
-.image_project:hover {
-  filter: none;
-  cursor: pointer;
+.card_project:hover > .image_project {
+  filter: drop-shadow(30px 10px 4px #016fa3);
+  transition: filter 0.5s ease;
 }
 
 .contact_and_skills {
@@ -399,11 +422,10 @@ footer {
   }
 
   .contact_and_skills h1 {
-    position: initial;
-    top: 0;
+    position: sticky;
     order: -1;
     text-align: center;
-    margin: -10px;
+    font-size: 3.5rem;
   }
 
   .contact_and_skills span {
@@ -483,6 +505,24 @@ footer {
 
   footer {
     left: calc(50% - 202px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title_projects h1 {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .contact_me_options {
+    min-width: 300px;
+    margin: 0;
+    left: 0;
+  }
+
+  .contact_me_options a {
+    width: 100%;
   }
 }
 
