@@ -237,7 +237,7 @@ main {
 }
 
 .skills_container {
-  padding: 25px 25px 25px 0px;
+  padding: 10px 10px 10px 0px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -256,7 +256,7 @@ main {
   padding-left: 5px;
 }
 
-.project_buttons button {
+.project_buttons a {
   width: 120px;
   padding: 10px;
   border: none;
@@ -264,10 +264,17 @@ main {
   font-weight: 1000;
   background-color: #016fa3;
   transition: transform 0.333s ease;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.project_buttons button:hover {
+.project_buttons a:hover {
   transform: scale(1.1);
+}
+
+.project_buttons a:last-child {
+  background-color: #152d5c;
 }
 
 .image_project {
