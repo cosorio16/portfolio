@@ -124,6 +124,7 @@ main {
 }
 
 .status_work {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -236,8 +237,14 @@ main {
 }
 
 .skills_container {
-  border: 1px solid navy;
-  padding: 25px;
+  padding: 25px 25px 25px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills_container img {
+  width: 40px;
 }
 
 .project_buttons {
@@ -267,11 +274,11 @@ main {
   width: 50%;
   border-radius: 20px;
   object-fit: cover;
+  transition: filter 0.5s ease;
 }
 
 .card_project:hover > .image_project {
   filter: drop-shadow(30px 10px 4px #016fa3);
-  transition: filter 0.5s ease;
 }
 
 .contact_and_skills {
