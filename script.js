@@ -4,13 +4,14 @@ const texts = [
   "JavaScript",
   "Django",
   "CSS3",
-  "Figma",
+  "Tailwind",
   "Python",
-  "Canva",
+  "Astro",
   "Git",
   "HTML",
   "GitHub",
   "VSCode",
+  "Sass",
 ];
 const options = {
   radius: 250,
