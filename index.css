@@ -42,6 +42,12 @@ button {
   cursor: pointer;
 }
 
+video {
+  object-fit: cover;
+  width: 50%;
+  border-radius: 20px;
+}
+
 header {
   width: 100%;
   max-width: 1200px;
